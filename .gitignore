@@ -1,0 +1,13 @@
+## Idea
+*.iml
+/.idea
+
+## Build
+.gradle
+/build
+
+## Properties
+/local.properties
+
+## Mac OS
+.DS_Store
