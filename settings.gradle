@@ -1,1 +1,2 @@
-include ':core'
+include ':core', 'stub'
+project(':stub').projectDir = new File('core/stub')
