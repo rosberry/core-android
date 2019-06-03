@@ -1,9 +1,9 @@
 package com.rosberry.android.core.presentation
 
-import com.arellomobile.mvp.MvpPresenter
-import com.arellomobile.mvp.MvpView
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
+import moxy.MvpPresenter
+import moxy.MvpView
 
 /**
  * @author Alexei Korshun on 30/11/2018.

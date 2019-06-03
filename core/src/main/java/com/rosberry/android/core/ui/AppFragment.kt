@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.arellomobile.mvp.MvpAppCompatFragment
+import moxy.MvpAppCompatFragment
 
 /**
  * @author Alexei Korshun on 08/10/2018.

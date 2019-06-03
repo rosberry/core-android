@@ -4,7 +4,7 @@
 package com.rosberry.android.core.ui
 
 import android.os.Bundle
-import com.arellomobile.mvp.MvpAppCompatActivity
+import moxy.MvpAppCompatActivity
 import ru.terrakok.cicerone.Navigator
 import ru.terrakok.cicerone.NavigatorHolder
 import javax.inject.Inject
