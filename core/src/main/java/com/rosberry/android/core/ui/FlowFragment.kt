@@ -1,3 +1,9 @@
+/*
+ *
+ *  * Copyright (c) 2018 Rosberry. All rights reserved.
+ *
+ */
+
 package com.rosberry.android.core.ui
 
 import com.rosberry.android.core.R
@@ -16,18 +22,9 @@ abstract class FlowFragment : AppFragment() {
     private val currentFragment
         get() = childFragmentManager.findFragmentById(R.id.container) as? AppFragment
 
-    @Inject
-    lateinit var navigatorHolder: NavigatorHolder
+    abstract var navigatorHolder: NavigatorHolder
 
-    protected val navigator: Navigator by lazy {
-
-        object : SupportAppNavigator(this.activity, childFragmentManager, R.id.container) {
-
-            override fun activityBack() {
-                onExit()
-            }
-        }
-    }
+    abstract val navigator: Navigator
 
     override fun onResume() {
         super.onResume()
@@ -42,6 +39,8 @@ abstract class FlowFragment : AppFragment() {
     override fun onBackPressed(): Boolean {
         return currentFragment?.onBackPressed() ?: super.onBackPressed()
     }
+
+    abstract fun closeScope()
 
     open fun onExit() {}
 }
