@@ -5,11 +5,11 @@ package com.rosberry.android.core;
  */
 public class R {
 
-    public final class layout {
+    public static final class layout {
         public final static int l_container = 0;
     }
 
-    public final class id {
+    public static final class id {
         public final static int container = 0;
     }
 }
