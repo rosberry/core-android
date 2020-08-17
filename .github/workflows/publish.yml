@@ -23,7 +23,7 @@ jobs:
           fileName: ${{ secrets.KEY_FILE_PATH }}
           encodedString: ${{ secrets.KEY_FILE }}
       - name: Build with Gradle
-        run: ./gradlew library:uploadArchives --no-daemon
+        run: ./gradlew core:uploadArchives --no-daemon
         env:
           KEY_NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
           KEY_NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
